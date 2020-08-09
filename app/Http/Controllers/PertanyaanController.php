@@ -11,6 +11,7 @@ class PertanyaanController extends Controller
         return view('index');
     }
     public function create(){
-        return view('index.create');
+        return view('create');
     }
+    
 }
