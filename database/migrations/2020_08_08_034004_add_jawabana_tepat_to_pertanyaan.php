@@ -15,7 +15,7 @@ class AddJawabanaTepatToPertanyaan extends Migration
     {
         Schema::table('pertanyaan', function (Blueprint $table) {
             //
-            $table->unsignedBigInteger('jawabana_tepat');
+            $table->unsignedBigInteger('jawabana_tepat')->nullable;
             $table->foreign('jawabana_tepat')->references('id')->on('jawaban');
         });
     }

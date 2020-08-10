@@ -1,13 +1,15 @@
 @extends('adminlte.master')
 
 @section('content')
+  <div class="container">
     <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">Pertanyaan</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="" method="">
+            <form role="form" action="/pertanyaan" method="POST">
+            @csrf
               <div class="box-body">
                 <div class="form-group">
                   <label for="judul">Judul</label>
@@ -32,4 +34,5 @@
               </div>
             </form>
           </div>
+        </div>
 @endsection

@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/master',function(){
-    return view('adminlte.master');
-});
-
-Route::get('/pertanyaan', 'PertanyaanController@index');
-
+// Route::get('/pertanyaan', 'PertanyaanController@index');
 Route::get('/pertanyaan/create','PertanyaanController@create');
 Route::post('/pertanyaan','PertanyaanController@store');
